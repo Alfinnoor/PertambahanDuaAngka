@@ -197,7 +197,10 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void hapusBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusBtnActionPerformed
-        // TODO add your handling code here:
+        angkaPertamaTF.setText(" ");
+        angkaKeduaTF.setText(" ");
+        hasilTF.setText(" ");
+        angkaPertamaTF.requestFocus();
     }//GEN-LAST:event_hapusBtnActionPerformed
 
     private void tambahBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahBtnActionPerformed
@@ -212,7 +215,7 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
         int hasil = angkaPertama + angkaKedua;
       
         hasilTF.setText(Integer.toString(hasil));
-            }
+    }
         
         
     }//GEN-LAST:event_tambahBtnActionPerformed
