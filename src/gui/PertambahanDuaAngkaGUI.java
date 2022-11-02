@@ -138,6 +138,11 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
         });
 
         keluarBtn.setText("Keluar");
+        keluarBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                keluarBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -205,7 +210,7 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
 
     private void tambahBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahBtnActionPerformed
         
-    if (angkaPertamaTF.getText().equals(" ") || angkaKeduaTF.getText().equals(" ")){
+    if (angkaPertamaTF.getText().equals("")|| angkaKeduaTF.getText().equals("")){
         JOptionPane.showMessageDialog(null, "Salah satu input tidak boleh kosong");
     } else {
             
@@ -219,6 +224,11 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_tambahBtnActionPerformed
+
+    private void keluarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarBtnActionPerformed
+  
+        System.exit(0);
+    }//GEN-LAST:event_keluarBtnActionPerformed
 
     /**
      * @param args the command line arguments
